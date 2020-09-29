@@ -1,0 +1,18 @@
+<h1>Hello! Please fill out this Login Form</h1>
+
+<%# A FORM TAG WILL MAKE A POST REQUEST TO THE URL PROVIDED %>
+<%# THE NAMES OF OUR INPUTS BECOMES THE KEYS OF OUR PARAMS (lines 9 and 11) %>
+
+<% if flash[:my_errors] %>
+  <% flash[:my_errors].each do |error| %>
+    <p style="color:red;"><%= error %></p>
+  <% end %>
+<% end %>
+
+<%= form_tag "/login" do  %>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <%= submit_tag "Log in!" %>
+<% end %>
