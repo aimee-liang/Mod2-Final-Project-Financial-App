@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <nav>
+
+    <% if logged_in? %>
+        <%# Logged in as  <%#= @current_user.name %> %>
+      <% end %>
+
+    </nav>
     <%= yield %>
   </body>
 </html>

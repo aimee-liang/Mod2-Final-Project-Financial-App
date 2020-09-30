@@ -4,10 +4,11 @@ class User < ApplicationRecord
     has_many :investments, through: :transactions
 
     validates :name, presence: true
-    validates :password, presence: true, numericality: {
-        greater_than: 6
+    validates :email_address, presence: true
+    validates :email_address, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
+    validates :password, presence: true, length: {
+        minimum: 7
     }
 
     has_secure_password
-
 end
