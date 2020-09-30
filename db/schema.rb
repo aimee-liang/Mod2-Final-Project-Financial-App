@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_28_194645) do
+ActiveRecord::Schema.define(version: 2020_09_30_143624) do
 
   create_table "goals", force: :cascade do |t|
-    t.string "goal"
     t.integer "amount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.string "title"
   end
 
   create_table "investments", force: :cascade do |t|
@@ -26,18 +27,31 @@ ActiveRecord::Schema.define(version: 2020_09_28_194645) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "transactions", force: :cascade do |t|
+  create_table "my_transactions", force: :cascade do |t|
     t.string "name"
     t.float "balance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "transactions", force: :cascade do |t|
     t.string "name"
-    t.string "password"
+    t.float "balance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.integer "investment_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
+    t.string "email_address"
+    t.integer "account_number"
+    t.string "bank_name"
+    t.float "balance"
   end
 
 end

@@ -1,7 +1,18 @@
-<h1>Welcome <%= @current_user.name %>, to your Personal Financial app!</h1>
-
-<%#= What would you like to do? %>
-<%#= button_to goals#index, transactions#index, investments#index %>
     <%#= when we have time - make these nice buttons with bootstrap gem %>
-<%#= button to logout? %>
-<%#= end %>
+<h1>Welcome, <%= @current_user.name %></h1>
+
+<h2> What would you like to do today? </h2>
+    <div class = "row">
+    <br>
+        <%= button_to "View My Financial Goals", goals_path %>
+        <br>
+        <br>
+        <%= button_to "Check My Bank Balance", transactions_path %>
+        <br>
+        <br>
+        <%= button_to "View My Investments", investments_path%>
+        <br>
+        <br>
+        <%= button_to "Log Out", logout_path, method: :delete%>
+        <br>
+    </div>

@@ -1,6 +1,5 @@
 class GoalsController < ApplicationController
     before_action :find_goal, only: [:show, :edit, :update, :destroy]
-        # gets a little confusing in goals_params, but I'm ok with it if you are/not sure if there'll be issues
 
     def index
         @goals = Goal.all
@@ -18,11 +17,11 @@ class GoalsController < ApplicationController
         
         if goal.valid?
             goal.save
-            flash[:success] = "You've one new goal!"
-            redirect_to goal_path(goal)
+            flash[:success] = "You've created one new goal!"
+            redirect_to goals_path
         else
-            flash[:errors] = goal.errors.full_messages
-            redirect_to new_goals_path
+            flash[:my_errors] = goal.errors.full_messages
+            redirect_to new_goal_path
         end
     end
 
@@ -46,7 +45,7 @@ private
     end
 
     def goals_params
-        params.require(:goal).permit(:goal, :amount)
+        params.require(:goal).permit(:title, :amount)
     end
 
 end

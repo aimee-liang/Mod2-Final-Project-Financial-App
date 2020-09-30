@@ -6,7 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(name:"Katara", password: "water")
-User.create(name:"Zuko", password: "fire")
-User.create(name:"Momo", password: "monkey")
+# require 'faker'
 
+
+User.destroy_all
+
+User.create(name:"Aimee Liang", email_address: "aimee@flatironschool.com", password: "abc1234", account_number: 123456789, bank_name: "Khan-Liang Bank Co.", balance: 15000)
+
+# account_number: Faker::Number.number(digits: 4)
+# bank_name: Faker::Bank.name
+# transaction_balance: Faker::Number.decimal(l_digits: 4, r_digits: 2)
+
+
+
+# 30.times do 
+#     Destination.create({
+#       name: Faker::GameOfThrones.city,
+#       country: Faker::Address.country
+#     })
+#   end
