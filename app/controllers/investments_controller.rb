@@ -1,5 +1,5 @@
 class InvestmentsController < ApplicationController
-    skip_before_action :authorized, only: [:index, :show]
+    skip_before_action :authorized, only: [:index, :show, :stocks, :stocks_form]
 
     def index
         @investments = Investment.all
@@ -19,19 +19,25 @@ class InvestmentsController < ApplicationController
             redirect_to investments_path
     end 
 
+    def stocks
+        begin
+            puts "creating iex client"
+            client = IEX::Api::Client.new(
+                publishable_token: 'pk_1f8c94d01b95418487f25d4f8b609c9e',
+                endpoint: 'https://cloud.iexapis.com/v1')
+            puts client
+            @stock_quote = client.quote(params[:ticker])
+        rescue Exception => e
+            # TODO add error handling and flash
+            puts e
+        end
+    end 
+
     private 
 
     def investment_params
         params.require(:investment).permit!
     end
 
-    def lookup_stock(ticker)
-        return client.quote(ticker)
-    end 
-
-    client = IEX::Api::Client.new(
-          publishable_token: 'pk_1f8c94d01b95418487f25d4f8b609c9e ',
-          secret_token: 'sk_b66d9fe7e685456ea64c8d3ae2d86560',
-          endpoint: 'https://cloud.iexapis.com/v1'
-        )
+    
 end

@@ -1,0 +1,15 @@
+<%= button_to "My Financial Goals", goals_path%>
+
+<h2>Goal: <%= @current_user.goal.name %></h2>
+<h3>Amount: $<%= @current_user.goal.amount %></h3>
+<br>
+<br>
+<br>
+
+<%#= To Do - update goal because we need a method that will divide the goal amount by how much this person is looking to save based on how much they're 
+    trying to contribute, right?%>
+
+<%#= Update this goal %>
+<%= button_to "Update Goal", edit_goal_path(@goal) %>
+<%#= Delete this goal %>
+<%= button_to "Delete Goal", %>

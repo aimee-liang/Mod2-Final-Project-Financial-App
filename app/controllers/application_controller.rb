@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
     end
 
     def logged_in?
-        # This method returns a boolean, depending on if there's a user logged in or not
         !!set_current_user
     end
 

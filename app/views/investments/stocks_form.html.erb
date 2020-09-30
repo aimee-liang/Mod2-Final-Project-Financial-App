@@ -1,0 +1,7 @@
+<h1>Stocks Form</h1>
+
+<%= form_tag stocks_path, method: 'get' do |f|  %>
+<%= label_tag :ticker %>
+<%= text_field_tag :ticker %>
+<%= submit_tag "SUBMIT" %>
+<% end %>

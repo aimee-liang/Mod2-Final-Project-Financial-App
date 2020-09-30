@@ -1,18 +1,22 @@
 <h2>Create a new goal for yourself</h2>
 
-<% if flash[:errors] %>
-    <% flash[:errors].each do |message| %>
+<div>
+<% if flash[:my_errors] %>
+    <% flash[:my_errors].each do |message| %>
     <p><%= message %></p>
     <% end %>
 <% end %>
+</div>
 
 <%= form_for @goal do |f| %>
     <%= f.label :goal %>
     <%= f.text_field :goal %>
     <br>
     <br>
+    <br>
     <%= f.label :amount %>
     <%= f.number_field :amount %>
+    <br>
     <br>
     <br>
     <%= f.submit "Create goal" %>
