@@ -1,7 +1,7 @@
-<h1> Investments </h1>
-<%= form_for @ticker do |f| %>
-<%= f.label :ticker  %>
-<%= f.text_field :ticker  %>
-<br>
-<%= f.submit %>
-<% end %>
+<h1> Investments Page</h1>
+
+<div>
+    <%= link_to "Home", users_path %>
+    <br>
+    <%= link_to "Find Stocks", stocks_form_path %>
+</div>

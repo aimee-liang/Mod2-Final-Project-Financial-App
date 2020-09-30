@@ -4,13 +4,13 @@
 <h2> What would you like to do today? </h2>
     <div class = "row">
     <br>
-        <%= button_to "View My Financial Goals", goals_path %>
+        <%= link_to "View My Financial Goals", goals_path%>
         <br>
         <br>
-        <%= button_to "Check My Bank Balance", transactions_path %>
+        <%= link_to "Check My Bank Balance", transactions_path %>
         <br>
         <br>
-        <%= button_to "View My Investments", investments_path%>
+        <%= link_to "View My Investments", investments_path%>
         <br>
         <br>
         <%= button_to "Log Out", logout_path, method: :delete%>
