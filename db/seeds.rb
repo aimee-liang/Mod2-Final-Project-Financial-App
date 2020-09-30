@@ -17,3 +17,6 @@ User.create(name:"Aimee Liang", email_address: "aimee@flatiron.com", password: "
 
 # bank name
 # Faker::Bank.name
+
+# for transaction balance
+# Faker::Number.decimal(l_digits: 4, r_digits: 2)
