@@ -1,12 +1,16 @@
 <div>
-    <%= button_to "Home Page", users_path %>
+    <%= button_to "Home", users_path %>
+    <%= button_to "View My Investments" %>
 </div>
 
 <div>
     <p>Account Name: <%= @current_user.name %></p>
-    <p>Account Number: <%#= faker gem here for account num %></p>
+    <p>Account Number: <%#= @current_user.account_number %></p>
+    <p>Account Bank: <%#= @current_user.bank_name%></p>
 </div>
 <br>
 <br>
 
-<h3>Your current balance is: $</h3>
+<div>
+<p>Your current balance is: $</p>
+</div>
