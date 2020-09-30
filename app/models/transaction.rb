@@ -4,10 +4,10 @@ class Transaction < ApplicationRecord
 
     # validations?
     
-    # def last_four_numbers
-        #prints "XXXXXX" + "self.account_number"
-    # end
+    def last_four_numbers
+        prints "XXXXXX" + "self.account_number"
+    end
 
     # need methods to update balance
-    
+
 end

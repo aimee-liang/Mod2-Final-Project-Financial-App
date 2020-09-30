@@ -5,12 +5,12 @@
 
 <div>
     <p>Account Name: <%= @current_user.name %></p>
-    <p>Account Number: <%#= @current_user.account_number %></p>
-    <p>Account Bank: <%#= @current_user.bank_name%></p>
+    <p>Account Number: <%= @current_user.account_number %></p>
+    <p>Account Bank: <%= @current_user.bank_name%></p>
 </div>
 <br>
 <br>
 
 <div>
-<p>Your current balance is: $</p>
+<p>Your current balance is: $<%= @current_user.transaction_balance%></p>
 </div>

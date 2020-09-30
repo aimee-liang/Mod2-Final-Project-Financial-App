@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_30_004952) do
+ActiveRecord::Schema.define(version: 2020_09_30_143624) do
 
   create_table "goals", force: :cascade do |t|
     t.integer "amount"
@@ -49,6 +49,9 @@ ActiveRecord::Schema.define(version: 2020_09_30_004952) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "password_digest"
     t.string "email_address"
+    t.integer "account_number"
+    t.string "bank_name"
+    t.float "balance"
   end
 
 end
