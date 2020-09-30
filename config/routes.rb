@@ -12,4 +12,9 @@ Rails.application.routes.draw do
   get "/login", to: "users#login", as: "login"
   post "/login", to: "users#handle_login"
   delete "/logout", to: "users#logout"
+
+
+  get "/stocks_form", to: "investments#stocks_form", as: "stocks_form"
+  get "/stocks", to: "investments#stocks", as: "stocks"
+
 end
