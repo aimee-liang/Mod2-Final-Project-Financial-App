@@ -1,7 +1,7 @@
 <div>
-    <%= button_to "Home", users_path %>
+    <%= link_to "Home", users_path %>
     <br>
-    <%= button_to "View My Investments" %>
+    <%= link_to "View My Investments", investments_path %>
 </div>
 
 <div>
@@ -13,5 +13,5 @@
 <br>
 
 <div>
-<p>Your current balance is: $<%= @current_user.transaction_balance%></p>
+<p>Your current balance is: $<%= @current_user.balance%></p>
 </div>

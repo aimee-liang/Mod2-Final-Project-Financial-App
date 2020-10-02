@@ -1,7 +1,53 @@
-<h1> Investments </h1>
-<%= form_for @ticker do |f| %>
-<%= f.label :ticker  %>
-<%= f.text_field :ticker  %>
+<div class=" font invest-index-a">
+    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+    </svg>
+    <%= link_to "Home", users_path %>
+</div>
+
+<div class="font invest-index-b">
+    <%= link_to "Find Stocks", stocks_form_path %>
+    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+</div>
+
+<div>
+    <h2 style="text-align:center;">Investments</h2>
+</div>
+
 <br>
-<%= f.submit %>
-<% end %>
+
+<div>
+    <h3 style="text-align:center;">Stock Ticker: ULTA</h3>
+    <h4 style="text-align:center;">Ulta</h4>
+    <div>
+    <p style="text-align:center;">Number of Shares You Hold: 1</p>
+    <p style="text-align:center;">Date Purchased: 09/28/2020 </p>
+    <p style="text-align:center;">Purchased for: $224.82 </p>
+    </div>
+</div>
+
+<br>
+
+<div>
+    <h3 style="text-align:center;">Stock Ticker: PFE</h3>
+    <h4 style="text-align:center;">Pfizer</h4>
+    <div>
+    <p style="text-align:center;">Number of Shares You Hold: 3</p>
+    <p style="text-align:center;">Date Purchased: 09/30/2020</p>
+    <p style="text-align:center;">Purchased for: $38.32</p>
+    </div>
+</div>
+
+<br>
+
+<div>
+    <h3 style="text-align:center;">Stock Ticker: LMT</h3>
+    <h4 style="text-align:center;">Lockheed Martin</h4>
+    <div>
+    <p style="text-align:center;">Number of Shares You Hold: 1</p>
+    <p style="text-align:center;">Date Purchased: 10/01/2020 </p>
+    <p style="text-align:center;">Purchased for: $382.13</p>
+    </div>
+</div>

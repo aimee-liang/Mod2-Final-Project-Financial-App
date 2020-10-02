@@ -1,13 +1,13 @@
-<h1>Welcome to the Khan-Liang Personal Finance App</h1>
+<h1 class="welcome-page font ">Welcome to the Khan-Liang Personal Finance App</h1>
 
-<h2>Our core values</h2>
-<p>
-  We believe every person should be comfortable setting personal financial goals, and that investing shouldn't be scary. We welcome all members
-  who are ready to take control of their lives and their money. If you are a member, please login below.
+<h2 class="our-core-values font ">Our core values</h2>
+<p class="core-values font ">
+  We believe every person should be comfortable setting personal financial goals, 
+  and that investing shouldn't be scary. We welcome all members
+  who are ready to take control of their lives and their money. 
+  If you are a member, please login below.
 </p>
 
-<%# A FORM TAG WILL MAKE A POST REQUEST TO THE URL PROVIDED %>
-<%# THE NAMES OF OUR INPUTS BECOMES THE KEYS OF OUR PARAMS (lines 9 and 11) %>
 
 <div>
   <% if flash[:my_errors] %>
@@ -15,6 +15,7 @@
     <% end %>
 </div>
 
+<div class="form">
 <%= form_tag "/login" do  %>
     <%= label_tag :Username %>
     <%= text_field_tag :name %>
@@ -30,3 +31,4 @@
     <br>
     <%= submit_tag "Log in!" %>
 <% end %>
+</div>

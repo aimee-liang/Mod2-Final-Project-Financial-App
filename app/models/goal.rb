@@ -1,7 +1,7 @@
 class Goal < ApplicationRecord
     belongs_to :user
 
-    validates :goal, presence: true
+    validates :title, presence: true
     validates :amount, presence: true, numericality: {
         greater_than: 0,
     }

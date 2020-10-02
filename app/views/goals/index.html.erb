@@ -1,8 +1,18 @@
-<h2>Your Personal Financial Goals are: </h2>
+<h2 class =" font personal-fin-goals-head">Your Personal Financial Goals are: </h2>
 
-<ul>
-<% @current_user.goals.each do |goal| %>
-    <li><%= link_to goal.goal, goal_path(@goal) %></li>
-    <li> <%= goal.amount %></li>
-<% end %>
-</ul>
+<div class="goal-list">
+    <ul class="goal-list-box">
+    <% @user.goals.each do |goal| %>
+        <li><%= link_to goal.title, goal_path(goal.id) %></li>
+    <% end %>
+    </ul>
+</div>
+
+
+<div class="goals-index-links">
+    <%= link_to "Home", users_path %>
+    <br>
+    <%= link_to "Create a new goal", new_goal_path %>
+    <br>
+    <%= link_to "View My Investments", investments_path %>
+</div>

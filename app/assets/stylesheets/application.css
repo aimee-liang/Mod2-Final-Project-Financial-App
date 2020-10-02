@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+
+.background{
+    background-image: url("background/logo.jpg"); 
+    padding-bottom: 500px;
+}
+
+.form{
+    width: 30%;
+    margin: 0% 35%;
+    input[type=text] {
+        width: 150%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+}
+
+.border-black{
+    border-color: black;
+}
+
+.invest-index-a{
+    text-align: left;
+}
+
+.invest-index-b{
+    text-align: right;
+}
+
+.our-core-values{
+    text-align: center;
+}
+
+.core-values{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row{
+    align-content: center;
+    display: block;
+}
+
+
+.welcome-page{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.centering{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.padding-50{
+    padding-top: 50px;
+
+}
+
+.personal-fin-goals-head{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.goal-list-box{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.goal-list{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.goals-index-links{
+
+}
+
+.font{
+    font-family: cursive;
+}
+
+.fontsize{
+    font-size: larger;
+}

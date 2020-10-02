@@ -1,8 +1,20 @@
-<h1>Show Stock page</h1>
-<h1><%= @stock_quote.company_name %></h1>
-<p>Symbol: <%= @stock_quote.symbol %> </p>
-<p>Price: <%= @stock_quote.delayed_price %> </p>
-<p>52 Week Low: <%= @stock_quote.week_52_low %> </p>
-<p>52 Week High: <%= @stock_quote.week_52_high %> </p>
-<p>Market Cap: <%= @stock_quote.market_cap %> </p>
-<p>Volume: <%= @stock_quote.avg_total_volume %> </p>
+<%= link_to "Back", stocks_form_path%>
+
+<div>
+    <h1>Show Stock Info</h1>
+        <br>
+    <% if @stock_quote %>
+    <h3><%= @stock_quote.company_name %></h3>
+    <p>Symbol: <%= @stock_quote.symbol %> </p>
+    <p>Price: $<%= @stock_quote.iex_realtime_price %> </p>
+    <p>52 Week Low: $<%= @stock_quote.week_52_low %> </p>
+    <p>52 Week High: $<%= @stock_quote.week_52_high %> </p>
+    <p>Market Cap: <%= @stock_quote.market_cap %> </p>
+    <p>Volume: <%= @stock_quote.avg_total_volume %> </p>
+    <% else  %>
+    <h3> We're sorry but the company symbol you've entered is invalid. </h3>
+    <% end  %>
+</div>
+<br>
+
+<%= link_to "Purchase Stock?", {:controller => "investments", :action => "new", :stock => @stock_quote } %>

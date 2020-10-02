@@ -2,10 +2,11 @@ class GoalsController < ApplicationController
     before_action :find_goal, only: [:show, :edit, :update, :destroy]
 
     def index
-        @goals = Goal.all
+        @user = @current_user
     end
 
     def show
+        @goal = Goal.find(params[:id])
     end
 
     def new
@@ -13,14 +14,15 @@ class GoalsController < ApplicationController
     end
 
     def create
-        goal = Goal.create(goals_params)
+        @user = @current_user
+        @goal = Goal.create(title: goals_params[:title], amount: goals_params[:amount], user_id: @user.id)
         
-        if goal.valid?
-            goal.save
+        if @goal.valid?
+            @goal.save
             flash[:success] = "You've created one new goal!"
             redirect_to goals_path
         else
-            flash[:my_errors] = goal.errors.full_messages
+            flash[:my_errors] = @goal.errors.full_messages
             redirect_to new_goal_path
         end
     end
@@ -45,7 +47,7 @@ private
     end
 
     def goals_params
-        params.require(:goal).permit(:title, :amount)
+        params.require(:goal).permit!
     end
 
 end
