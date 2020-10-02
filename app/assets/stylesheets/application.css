@@ -127,32 +127,61 @@
     flex-wrap: wrap;
     border-radius: 25px;
     flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .goal-list-box{
     background-color: #FFFFFF;
     opacity: 0.4;
     box-shadow: 6px 6px gray;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     text-align: center;
-    color: #000000;
     font-size: larger;
     font-weight: 300;
     font-size: larger;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
     border-radius: 25px;
-
+    align-content: space-between;
 }
 
-.goal-index-links{
+.goals-what-to-do{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+
+.goal-index-links-a{
+    background-color: #FFFFFF;
+    border:
+    opacity: 0.4;
+    width: 200px;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-index-links-b{
     background-color: #FFFFFF;
     opacity: 0.4;
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    min-height: 200px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -164,10 +193,50 @@
     align-items: center;
 }
 
-.goals-what-to-do{
-
+.goal-index-links-c{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 200px;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
 }
 
+.goals-new-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.goals-show-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.goals-show-choices{
+    text-align: center;
+}
+
+.goals-edit-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+
+
+/*  */
 
 .invest-index-a{
     text-align: left;
@@ -220,6 +289,42 @@
     height: 100px;
 }
 
+.my-investments{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 300px;
+    height: 275px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+}
+
+.my-account{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 300px;
+    height: 275px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
 /* .form{
     width: 30%;
     margin: 0% 35%;

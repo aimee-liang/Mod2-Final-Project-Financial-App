@@ -4,14 +4,12 @@
     <%= link_to "View My Investments", investments_path %>
 </div>
 
-<div>
+<div class = 'my-account'>
     <p>Account Name: <%= @current_user.name %></p>
     <p>Account Number: <%= @current_user.account_number %></p>
     <p>Account Bank: <%= @current_user.bank_name%></p>
-</div>
-<br>
-<br>
+    <p>Your current balance is: $<%= @current_user.balance%></p>
 
-<div>
-<p>Your current balance is: $<%= @current_user.balance%></p>
 </div>
+<br>
+<br>
