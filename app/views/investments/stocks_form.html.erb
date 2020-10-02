@@ -1,4 +1,13 @@
-<h1>Stocks Form</h1>
+<div>
+<%= link_to "My Investments", investments_path%>
+</div>
+
+<h1>Look Up Stock Information</h1>
+<% if flash[:my_errors] %>
+    <% flash[:my_errors].each do |error| %>
+    <p style = "color:red;"><%= error %></p> 
+    <% end  %>
+<% end  %>
 
 <%= form_tag stocks_path, method: 'get' do |f|  %>
 <%= label_tag :ticker %>

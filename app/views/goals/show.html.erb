@@ -6,12 +6,12 @@
 <br>
 <br>
 
-<%#= To Do - update goal because we need a method that will divide the goal amount by how much this person is looking to save based on how much they're 
-    trying to contribute, right?%>
 
 <div>
     <%= link_to "Update Goal", edit_goal_path(@goal) %>
     <br>
     <%= link_to "Delete Goal", goal_path, method: :delete %>
+    <br>
+    <%= link_to "Go back to My Goal$", goals_path%> 
 
 </div>

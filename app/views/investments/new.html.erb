@@ -1,1 +1,32 @@
-<h1> New Investment </h1> 
+<%= render 'layouts/navbar' %>
+<body>
+
+<div>
+<%= link_to "View My Investments", investments_path %>
+</div>
+<br>
+<div><%= link_to "Find Stocks", stocks_form_path %></div>
+
+<div>
+    <h2>Purchase Stock</h2>
+    <br>
+</div>
+
+    <%# if self.enough_funds? %>
+        <%#= self.enough_funds %>
+
+<div>
+    <% if @stock_quote %>
+        <p>Stock Company Name: <%= @stock_quote['company_name'] %></p>
+        <p>Stock Symbol: <%= @stock_quote['symbol'] %> </p>
+        <p>Current Price: $<%= @stock_quote['iex_realtime_price'] %></p>
+        <br>
+        <%= form_for(@investment) do |f|  %>
+            <%= f.hidden_field  :name, :value => @stock_quote['company_name'] %>
+            <%= f.hidden_field  :price, :value => @stock_quote['iex_realtime_price'] %>
+            <%= f.submit "CONFIRM" %>
+        <% end %>
+    <% end %>
+</div>
+
+</body>

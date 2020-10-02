@@ -1,8 +1,9 @@
     <%#= when we have time - make these nice buttons with bootstrap gem %>
-<h1>Welcome, <%= @current_user.name %></h1>
+<h1 class = "centering padding-50 font" >Welcome, <%= @current_user.name %></h1>
 
-<h2> What would you like to do today? </h2>
-    <div class = "row">
+<h2 class = "centering font" > What would you like to do today? </h2>
+    <div class = "row centering font fontsize "> 
+    <ul>
     <br>
         <%= link_to "View My Financial Goals", goals_path%>
         <br>
@@ -15,4 +16,5 @@
         <br>
         <%= button_to "Log Out", logout_path, method: :delete%>
         <br>
+        </ul>
     </div>

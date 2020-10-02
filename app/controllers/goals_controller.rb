@@ -47,7 +47,7 @@ private
     end
 
     def goals_params
-        params.require(:goal).permit(:title, :amount)
+        params.require(:goal).permit!
     end
 
 end

@@ -13,10 +13,13 @@
     <nav>
 
     <% if logged_in? %>
+        <%#= render 'layouts/navbar' %>
         <%# Logged in as  <%#= @current_user.name %>
       <% end %>
 
     </nav>
+    <div class = "background border-black"> 
     <%= yield %>
+    </div>
   </body>
 </html>

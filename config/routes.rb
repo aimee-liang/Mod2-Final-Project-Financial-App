@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+  root 'users#login'
+
+
   resources :users 
-  resources :investments, only: [:index]
+  resources :investments
   resources :transactions
   resources :goals 
-
-  # root page
-    # root: users/login
 
   #custom login and logout routes for users 
   # HTTPVERB "URL", to: "CONTROLLER_NAME#METHOD_NAME"
