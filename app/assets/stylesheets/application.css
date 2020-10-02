@@ -15,7 +15,6 @@
  */
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
 
 .font{
     font-family: 'Inter', sans-serif;
@@ -40,6 +39,35 @@
     padding-bottom: 30px;
 }
 
+.users-index-menu{
+    font-size: larger;
+    font-weight: 200;
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.users-index-choice{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: cen;
+}
+
+/* .log-out-button{
+    
+} */
+
 /* .form{
     width: 30%;
     margin: 0% 35%;
@@ -50,6 +78,22 @@
         box-sizing: border-box;
     }
 } */
+
+.goals-index{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: x-large;
+}
+
+.goal-list{
+
+}
+
+.goal-list-box{
+    
+}
 
 
 .invest-index-a{
