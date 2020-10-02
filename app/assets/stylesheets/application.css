@@ -164,7 +164,6 @@
 
 .goal-index-links-a{
     background-color: #FFFFFF;
-    border:
     opacity: 0.4;
     width: 200px;
     min-height: 200px;
@@ -240,18 +239,94 @@
     padding-bottom: 30px;
 }
 
-
-
-/*  */
-
-.invest-index-a{
-    text-align: left;
+.investments-index-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
 }
 
-.invest-index-b{
-    text-align: right;
+.transactions-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: xx-large;
 }
 
+/* .font-invest-index-a{
+    margin: auto;
+} */
+
+
+.my-investments{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 300px;
+    height: 275px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+    margin: auto;
+}
+
+.my-account{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 300px;
+    height: 275px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+    margin: auto;
+}
+
+.stock-info-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: xx-large;    
+}
+
+.stock-prices{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+    margin: auto;
+    min-height: min-content;
+}
 
 .row{
     align-content: center;
@@ -295,42 +370,17 @@
     height: 100px;
 }
 
-.my-investments{
-    background-color: rgb(240, 243, 245);
-    opacity: 0.4;
-    box-shadow: 6px 6px rgb(8, 48, 67);
-    width: 300px;
-    height: 275px;
-    text-align: center;
-    font-size: larger;
-    font-weight: 300;
-    font-size: larger;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 75px;
-    border-radius: 25px;
-    align-content: space-between;
-    text-align: center;
+.my-transactions-balance{
+    padding-left: 30px;
 }
 
-.my-account{
-    background-color: rgb(240, 243, 245);
-    opacity: 0.4;
-    box-shadow: 6px 6px rgb(8, 48, 67);
-    width: 300px;
-    height: 275px;
-    text-align: center;
-    font-size: larger;
-    font-weight: 300;
-    font-size: larger;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 75px;
-    border-radius: 25px;
-    align-content: space-between;
-    text-align: center;
+.purchase-stock-choice{
+    text-align: right;
+    font-size: large;
+    padding-right: 30px;
+}
+
+
 /* .form{
     width: 30%;
     margin: 0% 35%;
@@ -339,5 +389,4 @@
         padding: 15px 20px;
         margin: 8px 0;
         box-sizing: border-box;
-    }
-} */
+    }*/
