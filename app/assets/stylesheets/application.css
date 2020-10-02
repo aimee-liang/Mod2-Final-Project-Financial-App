@@ -254,10 +254,26 @@
     font-size: xx-large;
 }
 
-/* .font-invest-index-a{
-    margin: auto;
-} */
+.font-invest-index-a{
+    padding-left: 30px;
+}
 
+.my-investments-arrow{
+    padding-left: 30px;
+}
+
+.my-investments-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: xx-large;
+}
+
+.stock-lookup-ticker{
+    margin: auto;
+    text-align: center;
+}
 
 .my-investments{
     background-color: rgb(240, 243, 245);

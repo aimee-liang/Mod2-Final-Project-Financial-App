@@ -1,16 +1,23 @@
-<div>
+<div class="my-investments-arrow">
+<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
 <%= link_to "My Investments", investments_path%>
 </div>
 
-<h1>Look Up Stock Information</h1>
-<% if flash[:my_errors] %>
-    <% flash[:my_errors].each do |error| %>
-    <p style = "color:red;"><%= error %></p> 
-    <% end  %>
+<h1 class="my-investments-header">
+    Look Up Stock Information
+    </h1>
+    <% if flash[:my_errors] %>
+        <% flash[:my_errors].each do |error| %>
+        <p style = "color:red;"><%= error %></p> 
+        <% end  %>
 <% end  %>
 
-<%= form_tag stocks_path, method: 'get' do |f|  %>
-<%= label_tag :ticker %>
-<%= text_field_tag :ticker %>
-<%= submit_tag "SUBMIT" %>
-<% end %>
+<div class="stock-lookup-ticker">
+    <%= form_tag stocks_path, method: 'get' do |f|  %>
+    <%= label_tag :ticker %>
+    <%= text_field_tag :ticker %>
+    <%= submit_tag "SUBMIT" %>
+    <% end %>
+</div>
