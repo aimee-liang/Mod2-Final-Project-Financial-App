@@ -14,12 +14,33 @@
  *= require_self
  */
 
-.background{
-    background-image: url("background/logo.jpg"); 
-    padding-bottom: 500px;
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
+
+.font{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
 }
 
-.form{
+
+.background{
+    background-image: url("this/background.jpg"); 
+    padding-bottom: 90%
+}
+
+.welcome-users-index{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.what-do-today{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* .form{
     width: 30%;
     margin: 0% 35%;
     input[type=text] {
@@ -28,11 +49,8 @@
         margin: 8px 0;
         box-sizing: border-box;
     }
-}
+} */
 
-.border-black{
-    border-color: black;
-}
 
 .invest-index-a{
     text-align: left;
@@ -42,15 +60,6 @@
     text-align: right;
 }
 
-.our-core-values{
-    text-align: center;
-}
-
-.core-values{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 .row{
     align-content: center;
@@ -92,16 +101,4 @@
     text-align: center;
     width: 100px;
     height: 100px;
-}
-
-.goals-index-links{
-
-}
-
-.font{
-    font-family: cursive;
-}
-
-.fontsize{
-    font-size: larger;
 }

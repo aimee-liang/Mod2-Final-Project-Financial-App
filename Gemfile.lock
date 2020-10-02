@@ -78,8 +78,6 @@ GEM
     concurrent-ruby (1.1.7)
     crass (1.0.6)
     erubi (1.9.0)
-    faker (2.14.0)
-      i18n (>= 1.6, < 2)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (1.0.0)
@@ -248,7 +246,6 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-  faker
   iex-ruby-client (~> 1.0)
   jbuilder (~> 2.7)
   listen (~> 3.2)

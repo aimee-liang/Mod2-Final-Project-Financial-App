@@ -1,34 +1,63 @@
-<h1 class="welcome-page font ">Welcome to the Khan-Liang Personal Finance App</h1>
+<div class="container px-4 py-5 mx-auto">
+    <div class="card card0">
+        <div class="d-flex flex-lg-row flex-column-reverse">
+            <div class="card card1">
+                <div class="row justify-content-center my-auto">
+                    <div class="col-md-8 col-10 my-5">
+                        <h3 class="mb-5 text-center heading"> K·L· Finance</h3>
+                        <br>
+                        <h4 class="mb-5 text-center heading"> Personal Finance App</h4>
+                        <br>
+                        <h6 class="msg-info">Please login to your account</h6>
+                        <br>
+                          <div>
+                            <% if flash[:my_errors] %>
+                                <p style="color:red;"><%= flash[:my_errors] %></p>
+                              <% end %>
+                          </div>
+                          <br>
+                            <%= form_tag "/login" do  %>
+                              <%= label_tag :Username %>
+                              <%= text_field_tag :name %>
+                              <br>
+                              <br>
+                              <%= label_tag :Email%>
+                              <br>
+                              <%= text_field_tag :email_address%>
+                              <br>
+                              <br>
+                              <%= label_tag :password %>
+                              <%= password_field_tag :password %>
+                              <br>
+                              <br>
+                              <%= submit_tag "Log in!" %>
+                            <% end %>
+                          </div>
+                </div>
+                <div class="bottom text-center mb-5">
+                    <p href="#" class="sm-text mx-auto mb-3"><button class="btn btn-white ml-2">Create new account</button></p>
+                </div>
+            </div>
 
-<h2 class="our-core-values font ">Our core values</h2>
-<p class="core-values font ">
-  We believe every person should be comfortable setting personal financial goals, 
-  and that investing shouldn't be scary. We welcome all members
-  who are ready to take control of their lives and their money. 
-  If you are a member, please login below.
-</p>
-
-
-<div>
-  <% if flash[:my_errors] %>
-      <p style="color:red;"><%= flash[:my_errors] %></p>
-    <% end %>
-</div>
-
-<div class="form">
-<%= form_tag "/login" do  %>
-    <%= label_tag :Username %>
-    <%= text_field_tag :name %>
-    <br>
-    <br>
-    <%= label_tag :Email%>
-    <%= text_field_tag :email_address%>
-    <br>
-    <br>
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-    <br>
-    <br>
-    <%= submit_tag "Log in!" %>
-<% end %>
+<div class="card card2">
+  <div class="my-auto mx-md-5 px-md-5 right">
+    <h3 class="text-white">Our Core Values</h3> 
+      <small class="text-gray">
+        Khan-Liang was founded in 2020.
+        <br>
+        <br>
+        We believe every person should be comfortable setting personal financial goals, 
+        and that investing shouldn't be scary. 
+        <br>
+        <br>
+        We welcome all members who are ready to take control of their lives and their money. 
+        <br>
+        <br>
+        If you are a member, please login below.
+        <br>
+      </small>
+      </div>
+          </div>
+      </div>
+  </div>
 </div>
