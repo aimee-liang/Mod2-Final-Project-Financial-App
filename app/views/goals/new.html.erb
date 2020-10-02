@@ -1,12 +1,5 @@
 <h2 class="goals-new-header">Create a new goal for yourself</h2>
 
-<div>
-<% if flash[:my_errors] %>
-    <% flash[:my_errors].each do |message| %>
-    <p><%= message %></p>
-    <% end %>
-<% end %>
-</div>
 
 
 <div class="container"> 
@@ -14,6 +7,13 @@
         <div class="col-lg-7 mx-auto">
             <div class="card mt-2 mx-auto p-4 bg-light">
                 <div class="card-body bg-light">
+                        <div class="flash-errors-goals-new">
+                        <% if flash[:my_errors] %>
+                            <% flash[:my_errors].each do |message| %>
+                            <p><%= message %></p>
+                            <% end %>
+                        <% end %>
+                        </div>
                     <div class="container">
                         <%= form_for @goal do |f| %>
                                 <div class="row">
