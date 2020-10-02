@@ -4,30 +4,32 @@
 
     <div class="users-index-menu"> 
         <br>
-            <p class=users-index-choice>
+            <p class="users-index-choice-a">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>    
             <%= link_to "View My Financial Goals", goals_path%>
             </p>
 
-            <p class=users-index-choice>
+            <p class="users-index-choice-b">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
             <%= link_to "Check My Bank Balance", transactions_path %>
             </p>
 
-            <p class=users-index-choice>
+            <p class="users-index-choice-c">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
             <%= link_to "View My Investments", investments_path%>
             </p>
-    </div>
+        <div class="log-out-button">  
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                </svg>
+            <%#= button_to "Log Out", logout_path, method: :delete%>
+            <%= link_to "Log Out", logout_path, method: :delete%>
+        </div>
 
-    <%#= do something here to change button to? looks weird %>
-    <div class="log-out-button">  
-        <%= button_to "Log Out", logout_path, method: :delete%>
     </div>
-

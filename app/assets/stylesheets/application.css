@@ -40,44 +40,77 @@
 }
 
 .users-index-menu{
-    font-size: larger;
-    font-weight: 200;
-    background-color: #FFFFFF;
-    opacity: 0.4;
-    width: 300px;
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 25px;
+    flex-direction: column;
 }
 
-.users-index-choice{
+.users-index-choice-a{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
     color: navy;
     font-weight: 500;
     font-size: larger;
+    font-size: larger;
     justify-content: center;
-    align-items: cen;
+    align-items: center;
 }
 
-/* .log-out-button{
-    
-} */
+.users-index-choice-b{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
 
-/* .form{
-    width: 30%;
-    margin: 0% 35%;
-    input[type=text] {
-        width: 150%;
-        padding: 15px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-    }
-} */
+.users-index-choice-c{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-out-button{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
 
 .goals-index{
     color: #686868;
@@ -88,11 +121,51 @@
 }
 
 .goal-list{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    flex-direction: column;
 }
 
 .goal-list-box{
-    
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    box-shadow: 6px 6px gray;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: #000000;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+
+}
+
+.goal-index-links{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.goals-what-to-do{
+
 }
 
 
@@ -120,12 +193,12 @@
 .centering{
     display: flex;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
 }
 
 .padding-50{
     padding-top: 50px;
-
+    
 }
 
 .personal-fin-goals-head{
@@ -146,3 +219,14 @@
     width: 100px;
     height: 100px;
 }
+
+/* .form{
+    width: 30%;
+    margin: 0% 35%;
+    input[type=text] {
+        width: 150%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+} */
