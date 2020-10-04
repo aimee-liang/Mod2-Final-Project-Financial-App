@@ -13,3 +13,396 @@
  *= require_tree .
  *= require_self
  */
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+.font{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+}
+
+
+.background{
+    background-image: url("this/background.jpg"); 
+    padding-bottom: 90%
+}
+
+.welcome-users-index{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.what-do-today{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.users-index-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+.users-index-choice-a{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-weight: 500;
+    font-size: larger;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-index-choice-b{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-index-choice-c{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-out-button{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.goals-index{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: x-large;
+}
+
+.goal-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.goal-list-box{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    box-shadow: 6px 6px gray;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.goals-what-to-do{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+
+.goal-index-links-a{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 200px;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-index-links-b{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 200px;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-index-links-c{
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    width: 200px;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: navy;
+    font-size: larger;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.goals-new-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.flash-errors-goals-new{
+    text-align: left;
+    color:red
+}
+
+.goals-show-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.goals-show-choices{
+    text-align: center;
+}
+
+.goals-edit-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.investments-index-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.transactions-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: xx-large;
+}
+
+.font-invest-index-a{
+    padding-left: 30px;
+}
+
+.my-investments-arrow{
+    padding-left: 30px;
+}
+
+.my-investments-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: xx-large;
+}
+
+.stock-lookup-ticker{
+    margin: auto;
+    text-align: center;
+}
+
+.my-investments{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 300px;
+    height: 275px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+    margin: auto;
+}
+
+.my-account{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 300px;
+    height: 275px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+    margin: auto;
+}
+
+.stock-info-header{
+    color: #686868;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: xx-large;    
+}
+
+.stock-prices{
+    background-color: rgb(240, 243, 245);
+    opacity: 0.4;
+    box-shadow: 6px 6px rgb(8, 48, 67);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 300;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    border-radius: 25px;
+    align-content: space-between;
+    text-align: center;
+    margin: auto;
+    min-height: min-content;
+}
+
+.row{
+    align-content: center;
+    display: block;
+}
+
+
+.welcome-page{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.centering{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.padding-50{
+    padding-top: 50px;
+    
+}
+
+.personal-fin-goals-head{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.goal-list-box{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.goal-list{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.my-transactions-balance{
+    padding-left: 30px;
+}
+
+.purchase-stock-choice{
+    text-align: right;
+    font-size: large;
+    padding-right: 30px;
+}
+
+
+/* .form{
+    width: 30%;
+    margin: 0% 35%;
+    input[type=text] {
+        width: 150%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }*/

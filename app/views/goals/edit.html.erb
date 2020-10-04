@@ -1,1 +1,35 @@
-<h2>Edit Goal</h2>
+<h2 class="goals-edit-header">Editing Goal</h2>
+
+<div class="container"> 
+    <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+                    <div class="container">
+                        <%= form_for @goal do |f| %>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= f.label :title%>
+                                        <%= f.text_field :title %>
+                                        </div>
+                                    </div>
+                            <br>
+                            <br>
+                            <br>
+                            <%= f.label :amount %>
+                            <%= f.number_field :amount %>
+                            <br>
+                            <br>
+                            <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-12"> <input type="submit" class="btn btn-primary btn-send pt-2 btn-block " value="Update goal"> </div>
+                            </div>
+                        <% end %>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

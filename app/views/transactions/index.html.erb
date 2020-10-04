@@ -1,17 +1,24 @@
-<div>
-    <%= button_to "Home", users_path %>
-    <br>
-    <%= button_to "View My Investments" %>
+<div class="my-transactions-balance">
+    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+    <%= link_to "Home", users_path %>
+    <%= link_to "View My Investments", investments_path %>
+    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
 </div>
 
-<div>
+<div class="transactions-header">
+    Account Balance Information
+</div>
+
+<div class = 'my-account'>
     <p>Account Name: <%= @current_user.name %></p>
     <p>Account Number: <%= @current_user.account_number %></p>
     <p>Account Bank: <%= @current_user.bank_name%></p>
-</div>
-<br>
-<br>
+    <p>Your current balance is: $<%= @current_user.balance%></p>
 
-<div>
-<p>Your current balance is: $<%= @current_user.transaction_balance%></p>
 </div>
+<br>
+<br>

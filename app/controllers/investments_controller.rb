@@ -11,25 +11,30 @@ class InvestmentsController < ApplicationController
     
     def new 
         @investment = Investment.new
+        @stock_quote = params[:stock]
     end  
 
     def create 
-        @investment = Investment.create(investment_params)
+        price = investment_params[:price].to_f
+        if (price < @current_user.balance)
+            @investment = Investment.create(investment_params)
             session[:investment] = @investment.id
             redirect_to investments_path
+        else
+            flash[:my_errors] = ["We're sorry you do not have enough funds to purchase this stock"]
+            redirect_to stocks_form_path
+        end 
     end 
 
     def stocks
         begin
-            puts "creating iex client"
             client = IEX::Api::Client.new(
                 publishable_token: 'pk_1f8c94d01b95418487f25d4f8b609c9e',
                 endpoint: 'https://cloud.iexapis.com/v1')
-            puts client
+            
             @stock_quote = client.quote(params[:ticker])
         rescue Exception => e
             # TODO add error handling and flash
-            puts e
         end
     end 
 
