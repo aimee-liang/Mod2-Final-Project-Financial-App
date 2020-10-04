@@ -10,5 +10,4 @@ We used an API to incorporate the stock information, and seeded our information 
 
 Stretch goals for a Version 2.0 include creating a Financial Advisor capability that would be determined based on what your goals were, a join table to connect a User to a Financial Advisor, utilizing sessions and the Devise gem, methods that would change our frontend to update our Account Balance and reflect if their bank balance was sufficient to buy stocks(s), use an API to seed dummy data for a bank balance, and creating a clean minimalist CSS appearance. 
 
-* ...
 # Mod2-Final-Project-Financial-App
